@@ -1,73 +1,71 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: 'Small Phone 开发者指南',
-  description: 'Developing AI-Native Applications for Small Phone',
-  base: '/XSJDeveloperGuide/',
+  title: '老婆宝的教程',
+  description: 'SillyTavern酒馆学习使用过程中的最佳实践！',
+  base: '/',
   themeConfig: {
-    logo: '/logo.png', // 假设有这个文件，或者之后添加
+    logo: '/logo.png', // 暂时保留，虽然截图中是文字logo "lph" 风格的，可能需要自定义CSS或svg
     nav: [
-      { text: '指南', link: '/intro' },
-      { text: 'API 参考', link: '/api/' },
-      { text: '关于', link: '/about' }
+      { text: '主页', link: '/' },
+      { text: '小酒窝论坛', link: '/about-forum' },
+      { text: '支持一下', link: '/support' }
     ],
     sidebar: [
       {
-        text: '简介',
+        text: '前言',
         items: [
-          { text: '前言', link: '/intro' },
-          { text: '项目愿景', link: '/vision' }
+          { text: 'Read me', link: '/readme' },
+          { text: '小酒窝论坛', link: '/about-forum' },
+          { text: '开源声明', link: '/license' }
         ]
       },
       {
-        text: '快速上手',
+        text: '安装部署',
         items: [
-          { text: '环境搭建', link: '/guide/env-setup' },
-          { text: '安装部署', link: '/guide/installation' },
-          { text: '初次运行', link: '/guide/getting-started' },
-          { text: '使用教程', link: '/guide/tutorial' },
-          { text: 'API 快速入门', link: '/guide/api-quickstart' }
+          { text: '部署方式对比', link: '/deploy/comparison' },
+          { text: '安卓本地酒馆部署', link: '/deploy/android' },
+          { text: 'VPS云酒馆部署', link: '/deploy/vps' },
+          { text: 'Windows电脑本地部署', link: '/deploy/windows' },
+          { text: 'Mac电脑本地部署', link: '/deploy/mac' }
         ]
       },
       {
-        text: '核心架构',
+        text: 'API相关教程',
         items: [
-          { text: 'C++ 核心', link: '/core/cpp-core' },
-          { text: '跨平台 UI', link: '/core/ui-layer' }
+          { text: '关于API', link: '/api/about' },
+          { text: 'gcli2api-Zeabur版', link: '/api/gcli2api-zeabur' },
+          { text: 'gcli2api-VPS版', link: '/api/gcli2api-vps' },
+          { text: 'Build反代教程指路', link: '/api/build-reverse-proxy' }
         ]
       },
       {
-        text: 'API 参考',
+        text: '使用教程',
         items: [
-          { text: '概览', link: '/api/' }
-        ]
-      },
-      {
-        text: '贡献与社区',
-        items: [
-          { text: '关于', link: '/about' },
-          { text: '贡献指南', link: '/contributing' },
-          { text: '行为准则', link: '/code-of-conduct' }
+          { text: '酒馆新手使用教程', link: '/guide/beginner' },
+          { text: '酒馆相关知识科普', link: '/guide/knowledge' },
+          { text: '酒馆推荐设置项', link: '/guide/settings' },
+          { text: '怎么寻找预设、角色卡等资源', link: '/guide/resources' },
+          { text: '预设相关教程', link: '/guide/preset' },
+          { text: '正则相关教程', link: '/guide/regex' },
+          { text: '酒馆美化相关教程', link: '/guide/theme' }
         ]
       }
     ],
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/your-org/small-phone' }
-    ],
+    socialLinks: [], // 截图中似乎没有社交链接
     footer: {
-      message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2026 Small Phone Team'
+      message: '本站点由 老婆宝 搭建',
+      copyright: 'Copyright © laopobao.备案号： 粤ICP备2025449399号-1'
     },
     search: {
       provider: 'local'
     },
-    // 添加上一页/下一页文本配置，适配中文
     docFooter: {
       prev: '上一页',
       next: '下一页'
     },
     outline: {
-      label: '页面导航'
+      label: '当前页大纲'
     },
     lastUpdated: {
       text: '最后更新于',

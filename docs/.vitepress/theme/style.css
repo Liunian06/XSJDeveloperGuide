@@ -1,0 +1,9 @@
+:root {
+  --vp-c-brand-1: #9370db;
+  --vp-c-brand-2: #8a2be2;
+  --vp-c-brand-3: #7b68ee;
+}
+
+.VPImage.image-src {
+  border-radius: 8px;
+}
