@@ -1,7 +1,7 @@
-# Project Vision
+# 项目愿景
 
-Small Phone aims to redefine how users interact with their mobile devices through AI. We believe that the future of apps is not just about better UI, but about smarter, context-aware interactions that anticipate user needs.
+Small Phone 旨在通过 AI 重新定义用户与移动设备的交互方式。我们相信，未来的应用不仅仅是更好的 UI，而是更智能、更具上下文感知能力的交互，能够预测用户需求。
 
-## Why "Small Phone"?
+## 为什么叫 "Small Phone"?
 
-Because it's about making the technology disappear and the capability shine. It's about efficiency and intelligence packed into a powerful, accessible form factor.
+因为它致力于让技术隐形，让能力闪耀。它是关于将高效和智能打包进一个强大且易于使用的形态中。我们希望开发者能够构建出“小而美”的应用，专注于解决核心问题，将繁琐的逻辑交给 AI，将流畅的体验交给原生。

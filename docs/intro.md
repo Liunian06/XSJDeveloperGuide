@@ -1,27 +1,36 @@
-# Introduction
+# 前言
 
-::: warning ⚠️ Alpha Stage
-The Small Phone project is currently in early **Alpha** stage. APIs and architecture are subject to breaking changes. Please proceed with caution.
+::: warning ⚠️ 开发阶段警告
+本项目 (**Small Phone**) 目前处于 **Alpha** 开发阶段。
+API 接口和底层架构可能会发生破坏性变更（Breaking Changes）。请勿在生产环境中直接使用，建议仅用于学习和测试。
 :::
 
-## Welcome to Small Phone Development
+## 欢迎来到 Small Phone 开发者指南
 
-Small Phone is an ambitious project to create a truly AI-Native application experience. By leveraging a high-performance **C++ Core** for logic and AI processing, and using **Native UI** layers (Compose for Android, SwiftUI for iOS), we aim to deliver unparalleled performance and user experience.
+**Small Phone** 是一个极具野心的项目，旨在重新定义 **AI-Native（AI原生）** 应用的交互体验。我们不满足于仅仅在现有应用上叠加 AI 功能，而是从底层开始构建，打造一个完全由 AI 驱动逻辑、原生渲染 UI 的下一代移动端应用框架。
 
-### Key Philosophy
-*   **AI First**: Built from the ground up to be AI-native, not just AI-augmented.
-*   **Performance**: C++ core ensures consistent business logic and high performance across all platforms.
-*   **Native Experience**: No compromise on UI/UX. We use the best tools for each platform.
+通过结合高性能的 **C++ Core** 处理核心业务逻辑与 AI 推理，以及各平台原生的 UI 层（Android 的 Jetpack Compose，iOS 的 SwiftUI，Desktop 的 Flutter/Qt 等），我们致力于提供极致的性能与丝滑的用户体验。
 
-::: info ℹ️ Disclaimer
-This documentation is a work in progress. If you find any issues or have suggestions, please contribute on GitHub!
+### 核心理念
+
+*   **AI First (AI 优先)**: 所有的交互逻辑、数据处理均围绕 AI 能力构建。
+*   **Performance (极致性能)**: 核心逻辑下沉至 C++ 层，确保跨平台的一致性与高效率。
+*   **Native Experience (原生体验)**: 拒绝妥协。UI 层使用平台原生技术栈，保证最佳的视觉效果和交互手感。
+
+::: tip 💡 提示
+本项目的核心目标是让开发者能够用一套核心逻辑，驱动多端原生体验，同时无缝集成端侧大模型能力。
 :::
 
-## Join the Community
+## 免责声明
 
-We are building a community of developers passionate about AI and mobile development.
+本文档目前正在积极完善中。由于项目迭代速度较快，文档内容可能偶尔滞后于代码库。
+如果您发现任何错误或有改进建议，非常欢迎提交 Pull Request 或 Issue。
 
-*   **GitHub**: [Contribute to Source](https://github.com/your-org/small-phone)
-*   **QQ Group**: 12345678 (Join for discussion)
+## 加入社区
 
-Let's build the future of mobile AI together!
+我们需要您的参与！无论是贡献代码、完善文档，还是提出宝贵的建议，都是对我们最大的支持。
+
+*   **GitHub 仓库**: [点击前往 GitHub](https://github.com/your-org/small-phone)
+*   **开发者交流 QQ 群**: `12345678` (点击复制)
+
+让我们一起，构建移动 AI 的未来！
