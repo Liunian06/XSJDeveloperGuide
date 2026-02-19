@@ -5,13 +5,22 @@
   --vp-c-brand-3: #7b68ee;
 
   /* 固定sidebar宽度 */
-  --vp-sidebar-width: 300px;
+  --vp-sidebar-width: 600px;
 }
 
 /* ===== 防止滚动条抖动 ===== */
 /* 始终预留滚动条空间，避免页面内容长度变化时的宽度跳变 */
 html {
-  scrollbar-gutter: stable;
+  overflow-y: scroll;            /* 兼容方案：始终渲染滚动条轨道 */
+  scrollbar-gutter: stable;      /* 现代浏览器：预留滚动条空间，无内容时隐藏滑块 */
+}
+
+/* 当支持 scrollbar-gutter 时，取消强制 overflow-y: scroll，让滑块自然隐藏 */
+@supports (scrollbar-gutter: stable) {
+  html {
+    overflow-y: auto;
+    scrollbar-gutter: stable;
+  }
 }
 
 /* ===== 布局一致性 ===== */
