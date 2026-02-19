@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: 'XSJ Developer Guide',
+  title: '流年的小手机开发教程',
   description: 'XSJ Developer Guide',
   base: '/',
   themeConfig: {
