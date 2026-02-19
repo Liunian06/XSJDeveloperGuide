@@ -5,7 +5,13 @@
   --vp-c-brand-3: #7b68ee;
 
   /* 固定sidebar宽度 */
-  --vp-sidebar-width: 272px;
+  --vp-sidebar-width: 300px;
+}
+
+/* ===== 防止滚动条抖动 ===== */
+/* 始终预留滚动条空间，避免页面内容长度变化时的宽度跳变 */
+html {
+  scrollbar-gutter: stable;
 }
 
 /* ===== 布局一致性 ===== */
