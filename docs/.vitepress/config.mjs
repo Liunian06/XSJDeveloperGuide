@@ -8,9 +8,7 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
-      { text: '开发指南', link: '/guide/env-setup' },
-      { text: 'API 参考', link: '/api/' },
-      { text: '关于', link: '/about' }
+      { text: '开发教程', link: '/guide/env-setup' }
     ],
 
     sidebar: [
@@ -23,7 +21,7 @@ export default defineConfig({
         ]
       },
       {
-        text: '开发指南',
+        text: '开发教程',
         collapsed: false,
         items: [
           { text: '环境搭建', link: '/guide/env-setup' },
