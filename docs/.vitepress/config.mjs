@@ -13,11 +13,11 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: '入门',
+        text: '前言',
         collapsed: false,
         items: [
-          { text: '前言', link: '/intro' },
-          { text: '项目愿景', link: '/vision' }
+          { text: '写在前面的话', link: '/intro' },
+          { text: '开源协议', link: '/vision' }
         ]
       },
       {
