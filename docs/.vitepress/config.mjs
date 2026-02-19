@@ -45,16 +45,6 @@ export default defineConfig({
         items: [
           { text: 'API 文档', link: '/api/' }
         ]
-      },
-      {
-        text: '社区',
-        collapsed: false,
-        items: [
-          { text: '关于项目', link: '/about' },
-          { text: '关于小酒窝论坛', link: '/about-forum' },
-          { text: '贡献指南', link: '/contributing' },
-          { text: '行为准则', link: '/code-of-conduct' }
-        ]
       }
     ],
 
