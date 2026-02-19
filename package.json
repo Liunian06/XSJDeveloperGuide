@@ -11,8 +11,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "devDependencies": {
-    "vitepress": "^1.6.4"
+    "vitepress": "^1.5.0"
   }
 }
