@@ -7,3 +7,8 @@
 .VPImage.image-src {
   border-radius: 8px;
 }
+
+.VPNavBarTitle .title {
+  font-size: 18px !important;
+  font-weight: 600;
+}
