@@ -2,6 +2,22 @@
   --vp-c-brand-1: #9370db;
   --vp-c-brand-2: #8a2be2;
   --vp-c-brand-3: #7b68ee;
+
+  /* 固定左侧sidebar宽度，确保所有页面一致 */
+  --vp-sidebar-width: 272px;
+}
+
+/* 固定右侧大纲面板宽度，避免影响左侧布局感知 */
+.VPDoc .aside {
+  width: 232px;
+  min-width: 232px;
+  max-width: 232px;
+  flex-shrink: 0;
+}
+
+/* 当没有右侧大纲时，确保内容区域不会因为缺少aside而改变左侧sidebar的视觉宽度 */
+.VPDoc:not(.has-aside) .content-container {
+  max-width: 100%;
 }
 
 .VPImage.image-src {
