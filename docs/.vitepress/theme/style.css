@@ -7,17 +7,24 @@
   --vp-sidebar-width: 272px;
 }
 
-/* 固定右侧大纲面板宽度，避免影响左侧布局感知 */
+/* 强制固定左侧sidebar宽度 */
+.VPSidebar {
+  width: var(--vp-sidebar-width) !important;
+  min-width: var(--vp-sidebar-width) !important;
+  max-width: var(--vp-sidebar-width) !important;
+}
+
+/* 统一内容区域最大宽度，无论是否有右侧大纲面板 */
+.VPDoc .content-container {
+  max-width: 688px !important;
+}
+
+/* 固定右侧大纲面板宽度 */
 .VPDoc .aside {
   width: 232px;
   min-width: 232px;
   max-width: 232px;
   flex-shrink: 0;
-}
-
-/* 当没有右侧大纲时，确保内容区域不会因为缺少aside而改变左侧sidebar的视觉宽度 */
-.VPDoc:not(.has-aside) .content-container {
-  max-width: 100%;
 }
 
 .VPImage.image-src {
