@@ -67,6 +67,20 @@ html {
   gap: 6px;
 }
 
+/* 移除侧边栏默认的内边距，让内容更贴边 */
+.VPSidebar {
+  padding-left: 0px !important;
+  padding-right: 0 !important;
+}
+
+/* 覆盖 VitePress 内部各层级的 padding/margin 结构 */
+.VPSidebar nav,
+.VPSidebar .group,
+.VPSidebar .VPSidebarItem {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
 /* 分组标题前的装饰圆点 */
 .VPSidebarItem.level-0 > .item > .text::before {
   content: '';
@@ -93,6 +107,11 @@ html {
   margin-bottom: 2px !important;
 }
 
+.VPSidebarItem.level-0 > .item {
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+}
+
 /* 分组之间的渐变分割线 */
 .VPSidebarItem.level-0 + .VPSidebarItem.level-0 {
   border-top: 1px solid transparent;
@@ -107,7 +126,7 @@ html {
 .VPSidebarItem.level-1 > .item {
   position: relative;
   border-radius: 8px;
-  margin: 1px 8px 1px 0px;
+  margin: 1px 16px 1px 16px !important;
   padding: 0 !important;
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
@@ -129,9 +148,10 @@ html {
 
 /* 子菜单链接文字 */
 .VPSidebarItem.level-1 > .item .link {
-  padding: 6px 12px 6px 8px !important;
+  padding: 6px 12px 6px 20px !important;
   border-radius: 8px;
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  margin-left: 0px !important;
 }
 
 .VPSidebarItem.level-1 > .item .text {
