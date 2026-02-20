@@ -5,7 +5,7 @@
   --vp-c-brand-3: #7b68ee;
 
   /* 固定sidebar宽度 */
-  --vp-sidebar-width: 600px;
+  --vp-sidebar-width: 350px;
 }
 
 /* ===== 防止滚动条抖动 ===== */
@@ -107,7 +107,7 @@ html {
 .VPSidebarItem.level-1 > .item {
   position: relative;
   border-radius: 8px;
-  margin: 1px 8px 1px 4px;
+  margin: 1px 8px 1px 0px;
   padding: 0 !important;
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
@@ -129,7 +129,7 @@ html {
 
 /* 子菜单链接文字 */
 .VPSidebarItem.level-1 > .item .link {
-  padding: 6px 12px 6px 14px !important;
+  padding: 6px 12px 6px 8px !important;
   border-radius: 8px;
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -223,6 +223,10 @@ html {
 .VPNavBarTitle .title {
   font-size: 18px !important;
   font-weight: 600;
+  max-width: 280px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 /* ===== 暗色模式适配 ===== */
