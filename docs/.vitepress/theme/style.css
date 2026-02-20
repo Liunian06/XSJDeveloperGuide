@@ -32,17 +32,42 @@ html {
   max-width: var(--vp-sidebar-width) !important;
 }
 
-/* 统一内容区域最大宽度 */
-.VPDoc .content-container {
-  max-width: 688px !important;
+/* =========================
+   内容区域布局优化（高密度）
+   ========================= */
+
+/* 让整体内容区适配各种大屏，提高利用率 */
+.VPDoc .container {
+  max-width: 100% !important;
+  padding: 0 48px !important; /* 增加左右内边距，留出呼吸感 */
 }
 
-/* 固定右侧大纲面板宽度 */
+/* 扩展核心阅读区 (.content-container 默认被限死在 688px) */
+.VPDoc .content-container {
+  max-width: 1200px !important; /* 放开宽度限制，最大 1200px。默认 688px 太窄了 */
+}
+
+@media (min-width: 1440px) {
+  .VPDoc .content-container {
+      max-width: 1400px !important; /* 在超大屏幕上给予更宽敞的阅读区域 */
+  }
+}
+
+/* 适配大屏幕下的间距，保证阅读体验舒适不拥挤 */
+@media (min-width: 960px) {
+  .VPDoc {
+    padding-top: 48px !important;
+    padding-bottom: 64px !important;
+  }
+}
+
+/* 固定右侧大纲面板宽度及占位边距 */
 .VPDoc .aside {
-  width: 232px;
-  min-width: 232px;
-  max-width: 232px;
+  width: 256px; /* 稍微给大纲增加点宽度 */
+  min-width: 256px;
+  max-width: 256px;
   flex-shrink: 0;
+  padding-left: 32px; /* 和中间正文保持呼吸感 */
 }
 
 /* ===== Sidebar 美化 ===== */

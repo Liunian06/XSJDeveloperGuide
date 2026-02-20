@@ -8,7 +8,7 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
-      { text: '开发教程', link: '/guide/env-setup' }
+      { text: '入门', link: '/guide/what-you-need' }
     ],
 
     sidebar: [
@@ -21,9 +21,10 @@ export default defineConfig({
         ]
       },
       {
-        text: '开发教程',
+        text: '入门',
         collapsed: false,
         items: [
+          { text: '制作一个小手机需要什么', link: '/guide/what-you-need' },
           { text: '环境搭建', link: '/guide/env-setup' },
           { text: '安装部署', link: '/guide/installation' },
           { text: '初次运行', link: '/guide/getting-started' },
