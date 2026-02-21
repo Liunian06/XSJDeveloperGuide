@@ -10,7 +10,15 @@
 - 中文语言支持
 - AI 辅助编程工具
 
-## 步骤 1: 安装 Visual Studio Code (VSCode)
+## 步骤 1: 选择并安装代码编辑器（三选一）
+
+以下三个编辑器功能相似，**请根据个人喜好选择其中一个安装即可**：
+
+- **步骤 1.1**: Visual Studio Code (VSCode) - 最稳定，插件生态最丰富
+- **步骤 1.2**: Cursor - 内置强大的 AI 功能
+- **步骤 1.3**: Trae CN - 国内优化版本，原生中文界面
+
+### 步骤 1.1: 安装 Visual Studio Code (VSCode)
 
 VSCode 是微软开发的免费开源代码编辑器，轻量且功能强大。
 
@@ -39,18 +47,7 @@ VSCode 是微软开发的免费开源代码编辑器，轻量且功能强大。
 2. 将 Visual Studio Code 拖拽到"应用程序"文件夹
 3. 从启动台或应用程序文件夹打开 VSCode
 
-**Linux 用户：**
-```bash
-# Debian/Ubuntu
-sudo apt update
-sudo apt install code
-
-# Fedora/RHEL
-sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-sudo dnf install code
-```
-
-## 步骤 2: 安装 Cursor
+### 步骤 1.2: 安装 Cursor
 
 Cursor 是一个基于 VSCode 的 AI 原生代码编辑器，内置强大的 AI 编程助手。
 
@@ -72,11 +69,6 @@ Cursor 是一个基于 VSCode 的 AI 原生代码编辑器，内置强大的 AI 
 2. 将 Cursor 拖拽到"应用程序"文件夹
 3. 首次打开时可能需要在"系统偏好设置 > 安全性与隐私"中允许运行
 
-**Linux 用户：**
-1. 下载 `.AppImage` 文件
-2. 添加执行权限：`chmod +x Cursor-*.AppImage`
-3. 双击运行或通过终端执行
-
 ### 配置 Cursor
 
 首次启动 Cursor 后：
@@ -84,28 +76,42 @@ Cursor 是一个基于 VSCode 的 AI 原生代码编辑器，内置强大的 AI 
 2. 选择您喜欢的主题（推荐 Dark+ 或 One Dark Pro）
 3. 如果之前安装了 VSCode，选择导入设置
 
-## 步骤 3: 安装 Trae CN
+### 步骤 1.3: 安装 Trae CN
 
-Trae CN 是一个国内优化的开发工具，提供更快的访问速度和本地化支持。
+Trae CN 是 Trae 的中国地区发行版本，是一个类似 VSCode 的现代化 IDE，原生支持中文界面，提供更快的访问速度和本地化支持。
 
 ### 下载 Trae CN
 
-1. 访问 Trae CN 官网或 GitHub 仓库
-2. 下载最新版本的安装包
-
-> **注意**：如果您无法找到 Trae CN 的官方下载地址，可以跳过此步骤。VSCode 和 Cursor 已经足够满足开发需求。
+1. 访问 Trae CN 官网：[https://www.trae.cn/ide/download](https://www.trae.cn/ide/download)
+2. 选择适合您操作系统的版本（Windows / macOS / Linux）
+3. 点击下载按钮获取安装包
 
 ### 安装 Trae CN
 
-根据下载的安装包类型，按照常规软件安装流程完成安装即可。
+**Windows 用户：**
+1. 双击下载的安装程序
+2. 按照安装向导完成安装
+3. 首次启动时，界面已经是中文，无需额外配置
 
-## 步骤 4: 安装必备插件
+**macOS 用户：**
+1. 打开下载的 `.dmg` 文件
+2. 将 Trae CN 拖拽到"应用程序"文件夹
+3. 从启动台或应用程序文件夹打开 Trae CN
 
-我们需要为 VSCode 或 Cursor 安装三个核心插件。以下步骤在两个编辑器中通用。
+> **提示**：Trae CN 原生支持中文界面，因此使用 Trae CN 的用户无需安装中文语言包插件。
 
-### 方法一：通过插件市场安装（推荐）
+## 步骤 2: 安装必备插件
 
-#### 1. 安装 Chinese (Simplified) Language Pack
+我们需要为编辑器安装核心插件。根据您选择的编辑器，插件需求略有不同：
+
+- **VSCode / Cursor 用户**：需要安装 3 个插件（中文语言包 + Live Server + Kilo Code）
+- **Trae CN 用户**：只需安装 2 个插件（Live Server + Kilo Code），因为 Trae CN 原生支持中文
+
+### 通过插件市场安装
+
+#### 1. 安装 Chinese (Simplified) Language Pack（仅 VSCode / Cursor 用户需要）
+
+> **注意**：如果您使用的是 Trae CN，请跳过此步骤，直接安装 Live Server。
 
 这个插件将编辑器界面汉化为简体中文。
 
@@ -163,32 +169,22 @@ Kilo Code 是一个强大的 AI 编程助手插件。
 - 或使用快捷键调用 AI 助手
 - 可以让 AI 帮助解释代码、生成代码、修复 bug 等
 
-### 方法二：通过命令行安装
-
-如果您更喜欢使用命令行，可以使用以下命令快速安装所有插件：
-
-```bash
-# VSCode
-code --install-extension MS-CEINTL.vscode-language-pack-zh-hans
-code --install-extension ritwickdey.LiveServer
-code --install-extension kilocode.kilocode
-
-# Cursor（如果命令可用）
-cursor --install-extension MS-CEINTL.vscode-language-pack-zh-hans
-cursor --install-extension ritwickdey.LiveServer
-cursor --install-extension kilocode.kilocode
-```
-
 ### 验证插件安装
 
 1. 点击左侧"扩展"图标
 2. 在搜索框上方点击"已安装"筛选器
-3. 确认以下三个插件都在列表中：
+3. 确认插件已正确安装：
+
+**VSCode / Cursor 用户应看到 3 个插件：**
    - ✅ Chinese (Simplified) Language Pack
    - ✅ Live Server
    - ✅ Kilo Code
 
-## 步骤 5: 验证环境
+**Trae CN 用户应看到 2 个插件：**
+   - ✅ Live Server
+   - ✅ Kilo Code
+
+## 步骤 3: 验证环境
 
 完成以上步骤后，让我们验证开发环境是否正确配置：
 
@@ -281,16 +277,17 @@ cursor --install-extension kilocode.kilocode
 - 网络连接是否正常
 - 查看插件的输出日志，寻找错误信息
 
-### Q: VSCode 和 Cursor 应该选择哪个？
+### Q: VSCode、Cursor 和 Trae CN 应该选择哪个？
 
 **A:** 
-- **VSCode**：更稳定，插件生态更丰富，适合传统开发
-- **Cursor**：内置 AI 功能更强大，适合 AI 辅助开发
-- **建议**：两个都安装，根据需求切换使用
+- **VSCode**：更稳定，插件生态最丰富，适合传统开发，需要安装中文语言包
+- **Cursor**：内置 AI 功能更强大，适合 AI 辅助开发，需要安装中文语言包
+- **Trae CN**：国内优化版本，原生中文界面，访问速度快，无需安装中文语言包
+- **建议**：根据个人喜好选择其中一个即可，三者都支持 Live Server 和 Kilo Code 插件
 
 ### Q: 是否必须安装 Trae CN？
 
-**A:** 不是必须的。VSCode 和 Cursor 已经足够满足开发需求。如果您能找到 Trae CN 的官方资源且觉得有用，可以选择安装。
+**A:** 不是必须的。VSCode、Cursor 和 Trae CN 三选一即可。如果您更习惯国内软件或希望有原生中文支持，可以选择 Trae CN；如果您更喜欢国际主流工具，可以选择 VSCode 或 Cursor。
 
 ## 下一步
 
