@@ -18,8 +18,12 @@
 
 以下是使用上述提示词开发的完整演示：
 
-<video controls width="100%" poster="./videos/first-page-demo-cover.jpg" style="border-radius: 8px; margin: 20px 0;">
-  <source src="./videos/first-page-demo.mp4" type="video/mp4">
+::: tip 模型说明
+本演示使用的是 **Claude Sonnet 4.5** 模型。如果你的模型无法复现相同的结果，可以尝试切换到此模型，或使用更强的模型（如 **Claude Opus 4.6**）进行开发。
+:::
+
+<video controls width="100%" poster="https://raw.githubusercontent.com/Liunian06/XSJDeveloperGuide/main/media/%E5%88%9D%E6%AD%A5%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA/%E5%88%9D%E6%AD%A5%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA-%E5%B0%81%E9%9D%A2.jpg" style="border-radius: 8px; margin: 20px 0;">
+  <source src="https://raw.githubusercontent.com/Liunian06/XSJDeveloperGuide/main/media/%E5%88%9D%E6%AD%A5%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA/%E5%88%9D%E6%AD%A5%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA.mp4" type="video/mp4">
   你的浏览器不支持视频播放。
 </video>
 
