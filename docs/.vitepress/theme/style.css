@@ -294,7 +294,15 @@ html {
 }
 
 .dark .VPSidebarItem.level-1.is-active > .item:hover {
-  background: linear-gradient(135deg, 
-    rgba(147, 112, 219, 0.16), 
+  background: linear-gradient(135deg,
+    rgba(147, 112, 219, 0.16),
     rgba(123, 104, 238, 0.08));
+}
+
+/* ===== 代码块自动换行 ===== */
+.vp-doc div[class*="language-"] pre,
+.vp-doc div[class*="language-"] code {
+  white-space: pre-wrap !important;
+  word-break: break-word !important;
+  overflow-wrap: break-word !important;
 }
