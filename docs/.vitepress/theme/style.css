@@ -78,6 +78,13 @@ html {
   border-right: 1px solid var(--vp-c-divider) !important;
 }
 
+/* 左侧边栏标题居中 */
+.VPSidebar .VPSidebarNav .title,
+.VPLocalNav .menu-text {
+  text-align: center !important;
+  display: block !important;
+}
+
 /* ---- 分组标题样式 ---- */
 .VPSidebarItem.level-0 > .item > .text {
   font-weight: 700 !important;
