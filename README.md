@@ -110,52 +110,6 @@
 1. **在线阅读**：访问 [在线文档](https://liunian06.github.io/XSJDeveloperGuide/)
 2. **本地运行**：克隆本仓库并按照下方[本地开发](#️-本地开发)步骤操作
 
----
-
-## 🛠️ 本地开发
-
-### 安装依赖
-
-```bash
-npm install
-```
-
-### 启动开发服务器
-
-```bash
-npm run docs:dev
-```
-
-访问 `http://localhost:5173` 即可预览文档。
-
-### 构建生产版本
-
-```bash
-npm run docs:build
-```
-
-构建产物将输出到 `docs/.vitepress/dist` 目录。
-
----
-
-## 📦 部署指南
-
-本项目配置了 **GitHub Actions** 自动部署到 GitHub Pages。
-
-### 首次部署设置
-
-1. 进入 GitHub 仓库的 **Settings** → **Pages**
-2. 在 **Build and deployment** 部分，将 **Source** 选择为 **GitHub Actions**
-3. 设置会自动生效，无需额外保存操作
-
-> 💡 **提示**：如果遇到 `Error: HttpError: Resource not accessible by integration` 错误，通常是因为没有正确设置 Source。
-
-### 自动部署
-
-每次推送到 `main` 分支时，GitHub Actions 会自动构建并部署到 GitHub Pages。
-
----
-
 ## 🤝 参与贡献
 
 我们欢迎所有形式的贡献！无论是：
@@ -225,8 +179,6 @@ npm run docs:build
 ### 💖 感谢支持
 
 如果这个教程对你有帮助，欢迎 Star ⭐ 支持一下！
-
-**体面分享，互相尊重～**
 
 Made with ❤️ by [流年](https://github.com/Liunian06)
 
