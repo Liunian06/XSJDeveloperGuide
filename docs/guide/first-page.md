@@ -14,6 +14,15 @@
 现在开始开发
 ```
 
+## 演示视频
+
+以下是使用上述提示词开发的完整演示：
+
+<video controls width="100%" poster="/videos/first-page-demo-cover.jpg" style="border-radius: 8px; margin: 20px 0;">
+  <source src="/videos/first-page-demo.mp4" type="video/mp4">
+  你的浏览器不支持视频播放。
+</video>
+
 ## 预览你的成果
 
 1. 将 AI 生成的代码保存到项目目录中（例如创建一个 `index.html` 文件）
