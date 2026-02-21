@@ -29,11 +29,7 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: '制作一个小手机需要什么', link: '/guide/what-you-need' },
-          { text: '环境搭建', link: '/guide/env-setup' },
-          { text: '安装部署', link: '/guide/installation' },
-          { text: '初次运行', link: '/guide/getting-started' },
-          { text: 'API 快速入门', link: '/guide/api-quickstart' },
-          { text: '使用教程', link: '/guide/tutorial' }
+          { text: '环境搭建', link: '/guide/env-setup' }
         ]
       },
       {
