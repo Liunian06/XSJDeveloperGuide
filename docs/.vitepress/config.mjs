@@ -5,7 +5,11 @@ export default defineConfig({
   description: 'XSJ Developer Guide',
   base: '/XSJDeveloperGuide/',
   ignoreDeadLinks: true,
+  head: [
+    ['link', { rel: 'icon', href: '/XSJDeveloperGuide/favicon.png' }]
+  ],
   themeConfig: {
+    logo: '/logo.png',
     nav: [
       { text: '首页', link: '/' },
       { text: '入门', link: '/guide/what-you-need' }
