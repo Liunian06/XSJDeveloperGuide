@@ -18,8 +18,8 @@
 
 以下是使用上述提示词开发的完整演示：
 
-<video controls width="100%" poster="/videos/first-page-demo-cover.jpg" style="border-radius: 8px; margin: 20px 0;">
-  <source src="/videos/first-page-demo.mp4" type="video/mp4">
+<video controls width="100%" poster="./videos/first-page-demo-cover.jpg" style="border-radius: 8px; margin: 20px 0;">
+  <source src="./videos/first-page-demo.mp4" type="video/mp4">
   你的浏览器不支持视频播放。
 </video>
 
