@@ -39,7 +39,7 @@ export default defineConfig({
         text: '宗门焚诀',
         collapsed: false,
         items: [
-          { text: '宗门焚诀总览', link: '/burning/' },
+          { text: '关于宗门焚诀', link: '/burning/' },
           { text: '添加激活码', link: '/burning/activation-code' }
         ]
       },
