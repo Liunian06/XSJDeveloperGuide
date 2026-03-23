@@ -12,7 +12,8 @@ export default defineConfig({
     logo: '/logo.png',
     nav: [
       { text: '首页', link: '/' },
-      { text: '入门', link: '/guide/what-you-need' }
+      { text: '入门', link: '/guide/what-you-need' },
+      { text: '宗门焚诀', link: '/burning/' }
     ],
 
     sidebar: [
@@ -30,7 +31,16 @@ export default defineConfig({
         items: [
           { text: '制作一个小手机需要什么', link: '/guide/what-you-need' },
           { text: '环境搭建', link: '/guide/env-setup' },
-          { text: '开发你的第一个小手机页面', link: '/guide/first-page' }
+          { text: '开发你的第一个小手机页面', link: '/guide/first-page' },
+          { text: '数据库的选择', link: '/guide/database-choice' }
+        ]
+      },
+      {
+        text: '宗门焚诀',
+        collapsed: false,
+        items: [
+          { text: '宗门焚诀总览', link: '/burning/' },
+          { text: '添加激活码', link: '/burning/activation-code' }
         ]
       },
       {
@@ -50,7 +60,9 @@ export default defineConfig({
       }
     ],
 
-    socialLinks: [],
+    socialLinks: [
+ { icon: 'github', link: 'https://github.com/Liunian06/XSJDeveloperGuide' }
+ ],
 
     search: {
       provider: 'local',
